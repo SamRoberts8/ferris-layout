@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //------------------------------------------------------------------------------       ----------------------------------------------------------------------------
       KC_A,    MT(KC_LCTL, KC_R),    MT(MOD_LALT,KC_S),    MT(MOD_LGUI,KC_T),    KC_G,  	KC_M,    MT(MOD_RGUI,KC_N),   MT(MOD_RALT,KC_E),  MT(KC_RCTL,KC_I),  KC_O,
   //------------------------------------------------------------------------------       ----------------------------------------------------------------------------
-      KC_Z,   KC_X,  KC_C,   KC_D,  KC_V,     							KC_K,   KC_H,   TD(DANCE_2),   TD(DANCE_3),   TD(DANCE_3),
+      KC_Z,   KC_X,  KC_C,   KC_D,  KC_V,     							KC_K,   KC_H,   TD(DANCE_2),   TD(DANCE_1),   TD(DANCE_3),
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
 		    					OSM(MOD_LSFT), KC_BSPC,         MT(MOD_MEH,KC_SPACE)   , TO(1)                 
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
@@ -39,9 +39,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
     KC_ESCAPE,KC_AT    ,LSFT(KC_3)     ,TD(DANCE_31)     ,KC_PERC    ,KC_CIRC    ,KC_AMPR   ,KC_ASTR   ,KC_SCLN   ,KC_BSPC ,
   //----------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-    KC_TAB,KC_EQL    ,LALT(KC_RBRC)    ,LALT(LSFT(KC_RBRC))    ,TD(DANCE_32)    ,TD(BKSL_HME),LSFT(KC_LBRC),LSFT(KC_RBRC),TD(PIPE_END),KC_ENTER   ,
+    KC_TAB,KC_EQL    , MT(KC_LCTL, KC_EXLM)    ,MT(MOD_LALT, KC_SLSH)     ,TD(DANCE_32)    ,TD(BKSL_HME),LSFT(KC_LBRC),LSFT(KC_RBRC),TD(PIPE_END),KC_ENTER   ,
   //----------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-    KC_TILD, TD(DANCE_33)   ,LALT(KC_LBRC)   ,LALT(LSFT(KC_LBRC))   ,KC_DQUO   ,KC_LBRC     ,KC_LPRN   ,KC_RPRN   ,KC_RBRC   ,TO(3)   ,
+    KC_TILD, TD(DANCE_33)   ,LALT(KC_LBRC)   ,KC_UNDS  ,KC_DQUO   ,KC_LBRC     ,KC_LPRN   ,KC_RPRN   ,KC_RBRC   ,TO(3)   ,
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
 		    					TO(0) ,OSM(MOD_LSFT),KC_RALT      ,TO(2) 
   ),
@@ -54,17 +54,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
     QK_REBOOT,   KC_KP_ASTERISK, KC_BRIGHTNESS_DOWN,KC_BRIGHTNESS_UP,KC_KP_DOT,   KC_0,   KC_1, KC_2, KC_3,   KC_LSFT,
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-	  TO(0), KC_LGUI,KC_RALT ,TO(2)
+	  TO(0), KC_LGUI,KC_RALT ,TO(1)
   ),
 
   [3] = LAYOUT(
       TD(DANCE_54),   KC_MS_WH_LEFT,  KC_MS_UP,       KC_MS_WH_RIGHT, TD(DANCE_55), LGUI(KC_LBRC),LCTL(LSFT(KC_TAB)),RCTL(KC_TAB),   LGUI(KC_RBRC),KC_TRANSPARENT, 
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-	     TD(DANCE_56),   KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    MT(MOD_LGUI,KC_DEL),    TD(DANCE_60),   MT(MOD_RGUI,KC_DOWN), MT(MOD_RALT,KC_UP),   TD(DANCE_63),   KC_ENTER,     
+	     TD(DANCE_56),   KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    MT(MOD_LGUI,KC_DEL),    KC_LEFT,   KC_DOWN, KC_UP,   KC_RIGHT,   KC_ENTER,     
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-     TD(DANCE_58),   KC_MS_BTN2,     KC_MS_WH_UP,    KC_MS_WH_DOWN, KC_TRANSPARENT, KC_MS_BTN1,     KC_MS_ACCEL0,   KC_MS_ACCEL1,   KC_MS_ACCEL2,   KC_NO, 
+     TD(DANCE_58),   KC_MS_BTN2,     KC_MS_WH_UP,    KC_MS_WH_DOWN, MOD_LSFT, KC_MS_BTN1,     KC_MS_ACCEL0,   KC_MS_ACCEL1,   KC_MS_ACCEL2,   KC_NO, 
   //---------------------------------------------------------------------------------------       ----------------------------------------------------------------------------------
-                        TO(0),KC_TRANSPARENT,KC_RALT,                                   TO(1)
+                        TO(0),KC_LGUI,KC_RALT,                                   TO(1)
   )
 };
 
